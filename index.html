@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Satılık – B2B E-Ticaret & Bayi Yönetim Platformu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0e1420;
+      --bg-2: #101a2a;
+      --card: #0f172a99; /* glass */
+      --text: #e6ebf4;
+      --muted: #aab4c8;
+      --primary: #4f9cff;
+      --accent: #22d3ee;
+      --success: #22c55e;
+      --chip: #1e293b;
+      --ring: #60a5fa55;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial, "Noto Sans",sans-serif; color:var(--text);
+      background: radial-gradient(1200px 600px at 10% -20%, #1b2a4a 0%, transparent 60%),
+                  radial-gradient(1000px 600px at 110% 10%, #0b3b50 0%, transparent 55%),
+                  linear-gradient(180deg, #0a0f1a 0%, #0b1220 100%);
+    }
+    a{color:inherit; text-decoration:none}
+    .container{max-width:1120px; margin:0 auto; padding:28px 20px}
+    .navbar{position:sticky; top:0; z-index:30; backdrop-filter:saturate(140%) blur(10px); background:#0b1220cc; border-bottom:1px solid #1f2a3a}
+    .brand{display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.2px}
+    .brand .logo{width:38px; height:38px; display:grid; place-items:center; border-radius:12px; background:linear-gradient(135deg, var(--primary), var(--accent)); box-shadow:0 10px 30px #4f9cff44}
+    .nav-actions{display:flex; gap:10px}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:11px 16px; border-radius:14px; border:1px solid #2a3a55; background:#111a2a; color:var(--text); box-shadow:0 8px 20px #0008; transition:.2s ease; cursor:pointer}
+    .btn:hover{transform:translateY(-1px); box-shadow:0 12px 28px #000a}
+    .btn.primary{background:linear-gradient(135deg, var(--primary), var(--accent)); border-color:transparent; color:#04121f}
+    .chip{display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border-radius:999px; background:var(--chip); color:var(--muted); border:1px solid #263347}
+
+    .hero{display:grid; grid-template-columns: 1.2fr 1fr; gap:32px; align-items:center; padding:28px 0 10px}
+    .hero h1{font-size: clamp(28px, 4vw, 46px); line-height:1.08; margin:14px 0 10px}
+    .hero p{color:var(--muted); font-size:clamp(14px,1.8vw,16px); margin:0 0 16px}
+    .contact-cta{display:flex; flex-wrap:wrap; gap:12px; margin:18px 0 4px}
+
+    .mock{position:relative; border-radius:22px; overflow:hidden; background:linear-gradient(180deg, #0f172a, #0b1220); border:1px solid #223148; box-shadow: 0 20px 60px #0009, 0 0 0 8px #0b1220 inset; display:flex; align-items:center; justify-content:center}
+    .mock img{width:100%; height:100%; object-fit:cover; display:block; filter:saturate(108%);}
+    .ribbon{position:absolute; right:-48px; bottom:26px; transform:rotate(-12deg); background:#ef4444; color:white; font-weight:800; letter-spacing:.4px; padding:10px 52px; border-radius:14px; box-shadow:0 16px 36px #ef444477}
+
+    .badges{display:flex; flex-wrap:wrap; gap:10px; margin:10px 0 0}
+
+    .section{margin:56px 0 0}
+    .grid{display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:18px}
+    .card{background:var(--card); border:1px solid #203045; border-radius:24px; padding:22px; box-shadow: 0 8px 28px #0007}
+    .card h3{margin:2px 0 10px; font-size:20px}
+    .card ul{margin:6px 0 0 0; padding:0 0 0 18px; display:grid; gap:8px}
+    .card li{line-height:1.45}
+
+    .hash{color:#9fb1cc; font-size:14px}
+    .hash code{background:#0f192a; padding:4px 8px; border-radius:999px; border:1px solid #203045}
+
+    .footer{margin:44px 0 20px; color:var(--muted); display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap}
+    .footer .small{font-size:13px}
+
+    @media (max-width: 940px){
+      .hero{grid-template-columns:1fr;}
+      .mock img{height:auto; object-fit:contain;}
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+      <div class="brand">
+        <div class="logo">🚀</div>
+        <div>Production Ready</div>
+      </div>
+      <div class="nav-actions">
+        <a class="btn" href="mailto:taskiransabahattin32@gmail.com">📧 E‑posta</a>
+        <a class="btn primary" href="tel:+905528874011">📱 Ara</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div>
+        <span class="chip">Satılık – Full Hak Devri ile</span>
+        <h1>Gelişmiş B2B E‑Ticaret & Bayi Yönetim Platformu <span style="font-weight:600">(Kaynak Kod Dahil)</span></h1>
+        <p>
+          Tüm haklarıyla birlikte, tamamen üretime hazır, gelişmiş özelliklere sahip B2B E‑Ticaret & Bayi Yönetim Platformu satılıktır. Mevcutta müşterisi vardır ve kullanıma devam ediliyor ancak müşteriler benim bünyemde değildir.
+        </p>
+        <p>
+          Platform; kullanıcı, firma, mağaza, ürün, sipariş, ödeme ve raporlama modüllerini içerir. ERP entegrasyonu, ElasticSearch tabanlı ve Yapay Zeka destekli gelişmiş ürün arama, bankaların sanal pos, ödeme kuruluşu entegrasyonları ve detaylı raporlama özellikleri mevcuttur. Logo Go3, Tiger ve Netsis entegrasyonu vardır ve diğerleri de kolaylıkla entegre edilebilir.
+        </p>
+        <div class="contact-cta">
+          <a class="btn primary" href="mailto:taskiransabahattin32@gmail.com">📧 taskiransabahattin32@gmail.com</a>
+          <a class="btn" href="tel:+905528874011">📱 +90 552 887 4011</a>
+        </div>
+        <div class="badges">
+          <span class="chip">ASP.NET Core MVC</span>
+          <span class="chip">SQL Server</span>
+          <span class="chip">Elasticsearch</span>
+          <span class="chip">ERP Integration</span>
+        </div>
+      </div>
+
+      <div class="mock">
+        <!-- Replace src with your uploaded image file name -->
+        <img src="B2B.png" alt="B2B E‑Ticaret & Bayi Yönetim Platformu" />
+      </div>
+    </section>
+
+    <!-- DETAILS -->
+    <section class="section">
+      <div class="grid">
+        <article class="card">
+          <h3>Öne Çıkan Özellikler</h3>
+          <ul>
+            <li>ASP.NET Core MVC altyapısı</li>
+            <li>Role-Based Authorization ile gelişmiş yetkilendirme</li>
+            <li>ERP sistemleri ile veri entegrasyonu</li>
+            <li>ElasticSearch ve Yapay Zeka destekli ürün arama</li>
+            <li>Banka POS entegrasyonları (sanal pos)</li>
+            <li>Gelişmiş raporlama: en çok satılan ürünler, şehir/firma bazlı satış, yıllık istatistikler</li>
+            <li>Mobil uyumlu yönetim paneli</li>
+            <li>Modern, modüler kod yapısı (servis + controller katmanları)</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Satış Kapsamı</h3>
+          <ul>
+            <li>Tüm kaynak kodlar (.NET Core)</li>
+            <li>Veritabanı şeması ve scriptleri</li>
+            <li>Teknik dokümantasyon</li>
+            <li>Opsiyonel: Kurulum, demo ortamı ve eğitim desteği</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- HASHTAGS -->
+    <section class="section card">
+      <h3 style="margin:0 0 8px">Etiketler</h3>
+      <div class="hash" style="display:flex; flex-wrap:wrap; gap:8px">
+        <code>#netsis</code>
+        <code>#logo</code>
+        <code>#logotiger</code>
+        <code>#logogo3</code>
+        <code>#erpentegrasyon</code>
+        <code>#bayi</code>
+        <code>#bayiyönetimsistemi</code>
+        <code>#sipariş</code>
+        <code>#siparişyönetimsistemi</code>
+        <code>#b2b</code>
+        <code>#eticaret</code>
+        <code>#sanalmağaza</code>
+        <code>#satılıkyazılım</code>
+      </div>
+      <p class="small" style="margin:14px 0 0; color:var(--muted)">Logo Yazılım</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="small">© Satılık – B2B E‑Ticaret & Bayi Yönetim Platformu (Kaynak Kod Dahil)</div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center">
+        <a class="btn" href="mailto:taskiransabahattin32@gmail.com">📧 E‑posta</a>
+        <a class="btn primary" href="tel:+905528874011">📱 +90 552 887 4011</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Basic UX helpers (no extra content)
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const id=a.getAttribute('href').slice(1);
+        const el=document.getElementById(id); if(!el) return;
+        window.scrollTo({top: el.offsetTop-70, behavior:'smooth'});
+      });
+    });
+  </script>
+</body>
+</html>
